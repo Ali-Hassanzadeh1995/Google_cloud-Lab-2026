@@ -1,0 +1,20 @@
+[project]
+name = "obesity"
+version = "0.1.0"
+description = "Obesity prediction API"
+authors = [
+    {name = "Ali-Hassanzadeh1995",email = "hasanzadeh.mohammad1995@gmail.com"}
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=3.0.3,<4.0.0)",
+    "scikit-learn (>=1.8.0,<2.0.0)",
+    "fastapi (>=0.136.3,<0.137.0)",
+    "uvicorn[standard] (>=0.47.0,<0.48.0)",
+    "pydantic (>=2.13.4,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

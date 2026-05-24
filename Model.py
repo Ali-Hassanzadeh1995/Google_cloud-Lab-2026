@@ -12,7 +12,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # 1. Load Data
-df = pd.read_csv("ObesityDataSet_raw_and_data_sinthetic.csv")
+df = pd.read_csv("data/ObesityDataSet_raw_and_data_sinthetic.csv")
 X = df.drop("NObeyesdad", axis=1)
 y = df["NObeyesdad"]
 

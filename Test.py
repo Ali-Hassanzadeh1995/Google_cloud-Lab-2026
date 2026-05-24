@@ -5,7 +5,6 @@ import pickle
 loaded_model = pickle.load(open("obesity_model.pkl", "rb"))
 
 # 2. Simulate getting input from a user (e.g., from a web form or terminal)
-# Make sure these keys match the columns in ObesityDataSet_raw_and_data_sinthetic.csv
 user_input = {
     "Gender": "Male",
     "Age": 31,
@@ -29,7 +28,6 @@ user_input = {
 user_df = pd.DataFrame([user_input])
 
 # 4. Predict the Obesity Level!
-# The pipeline automatically scales the data and encodes the text before predicting.
 prediction = loaded_model.predict(user_df)
 
 print(f"Predicted Obesity Level: {prediction[0]}")
